@@ -1,3 +1,5 @@
+//Set up just as it should!
+
 // Menu data structure
 var menuLinks = [
     {text: 'about', href: '/about'},
@@ -41,10 +43,13 @@ topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList.add('flex-around');
 
 // Task 3.1
-
+// you can remove var and use const here
 menuLinks.forEach(function(link) {
-    var linkEl = document.createElement('a');
+    const linkEl = document.createElement('a');
     linkEl.setAttribute('href', link.href);
     linkEl.textContent = link.text;
     topMenuEl.appendChild(linkEl);
 })
+
+//I would highly recommend doing the bonus, it is a great practice.
+
